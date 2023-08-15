@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: sans-serif;
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(key.jpg) center/cover no-repeat fixed; 
+}
+
+.navbar{
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: whitesmoke;
+  padding: 30px 300px 20px 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.2s;
+  box-shadow: -3px -3px 7px #ffffff73,
+        2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+.logo{
+  width: 12rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.navbar ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul li{
+  list-style: none;
+  margin-left: 50px;
+}
+.navbar ul li a{
+  color: #000;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.navbar ul li a:hover{
+  background-color: darkcyan;
+}
+
+
+/*-------------------------------Top----------------------------------------------*/
+.top{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+.img {
+  order: 2;
+}
+.img img {
+
+  width: 600px;
+}
+.top .text{
+  margin: 250px 250px;
+}
+.text span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.top .text h1 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+  font-weight: 800;
+}
+.top .text h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.top .text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  background: darkcyan;
+  color: #000;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+/*-------------------------------------about------------------------------------*/
+
+.about{
+  min-height: 100vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(4.jpg) center/cover no-repeat fixed; 
+  padding-top: 120px;
+}
+.about .heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+.about .heading h2{
+  font-size: 2rem;
+  font-weight: 800;
+  border-bottom: 3px solid #222;
+}
+.about .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+ 
+.container img {
+  width: 60%;
+  border-radius: 0.5rem;
+}
+
+.about .text p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+.about .btn {
+  display: inline-block;
+  background: darkcyan;
+  color: #000;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+
+/*-------------------------------------skills------------------------------------*/
+
+.skills{
+  min-height: 100vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(6.jpg) center/cover no-repeat fixed; 
+  padding-top: 180px;
+}
+.skills .title{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.skills .title h2{
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 3px solid #222;
+}
+.skills .content{
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 300px 300px 300px;
+}
+.skills .content .column{
+    width: 400px;
+}
+.skills .content .left p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.skills .content .left a{
+    background: darkcyan;
+    color: #000;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.5rem;
+    margin-top: 15px;
+}
+
+.skills .content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .content .right span{
+    font-weight: 500;
+    font-size: 20px;
+}
+.skills .content .right .line{
+    height: 6px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: darkcyan;
+}
+.content .right .html::before{
+    width: 90%;
+}
+.content .right .css::before{
+    width: 60%;
+}
+.content .right .php::before{
+    width: 80%;
+}
+.content .right .cpp::before{
+    width: 50%;
+}
+.content .right .python::before{
+    width: 70%;
+}
+
+/*-------------------------------------Projects------------------------------------*/
+
+.projects{
+    min-height: 100vh;
+    background:linear-gradient(rgba(22, 22, 22, 0.4), rgba(11, 11, 11, 0.4)), url(2.jpg) center/cover no-repeat fixed; 
+    padding-top: 180px;
+    color: whitesmoke;
+  }
+  .projects .title{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .projects .title h2{
+    font-size: 3rem;
+    font-weight: 600;
+    border-bottom: 3px solid #222;
+    color: whitesmoke;
+  }
+   h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color:whitesmoke; 
+  }
+  
+ 
+
+/*-------------------------------------footer-------------------------------------*/
+footer{
+  background-color:#96897f;
+  height: 40vh;
+}
+.left p{
+  text-align: center;
+  padding-top: 150px;
+  font-size: 2rem;
+}
+
+.center{
+  display: flex;
+  padding: 100px 400px 0px 400px;
+  justify-content: space-between;
+}
+.center i{
+  font-size: 1.5rem;
+  align-items: center;
+  
+}
+.center i a{
+  color: #c6bcb6;
+}
